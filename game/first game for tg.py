@@ -6,7 +6,8 @@ from telegram.ext import (
 from random import randint, choice
 import asyncio
 
-BOT_TOKEN = "8101089919:AAEZdZ9VJ8-B30BYdeJZOo3QAagmbSLvBLk"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 CHOOSING_ACTION = range(1)
 
