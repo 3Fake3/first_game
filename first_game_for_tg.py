@@ -1,3 +1,6 @@
+import threading
+from fake_http_server import run_http_server
+threading.Thread(target=run_http_server, daemon=True).start()
 from telegram import Update
 from telegram.ext import (
     ApplicationBuilder, CommandHandler, MessageHandler, filters,
